@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background-color: #ece8da;
+}
+
+.nav-top {
+  font-family: Arial;
+}
+.nav-top ul {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  background-color: #103050;
+  height: 75px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0;
+}
+.nav-top li {
+  margin: 10px 25px;
+  color: #4f8bac;
+}
+.nav-top a {
+  text-decoration: none;
+  color: #4f8bac;
+  font-size: 2em;
+}
+.nav-top a:hover {
+  color: #e1ffff;
+}
+
+.banner {
+  height: 400px;
+}
+.banner h1 {
+  padding: 20px;
+  text-align: center;
+  color: #e1ffff;
+  align-items: center;
+}
+.banner p {
+  text-align: center;
+  color: #e1ffff;
+}
+
+.img-banner {
+  background-image: url("../img/cinema1.jpg");
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+#movies {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  grid-auto-rows: minmax(200px, 530px);
+  grid-column-gap: 5px;
+}
+
+div {
+  padding: 20px;
+}
+
+p {
+  width: 100%;
+  background-color: grey;
+  text-align: center;
+  font-size: 1.4em;
+  margin: 2px 0 0 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: fill;
+}
+
+button {
+  padding: 10px;
+  margin-bottom: 50px;
+  margin: auto;
+  display: block;
+}
+
+h2 {
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 650px) {
+  #movies {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2px;
+  }
+
+  .nav-top ul {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
